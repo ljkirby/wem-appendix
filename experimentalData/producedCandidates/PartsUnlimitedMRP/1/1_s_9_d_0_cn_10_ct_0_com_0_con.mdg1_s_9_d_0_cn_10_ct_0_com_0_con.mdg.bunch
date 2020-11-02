@@ -1,0 +1,5 @@
+SS(DealerController.ss) = DealerInfo, OrderEventInfo, OrderUpdateInfo, PhoneInfo, DealerController
+SS(mongodb.MongoOrderRepository.ss) = OrderController, mongodb.MongoOrderRepository, OrderRepository, mongodb.MongoOperationsWithRetry, mongodb.CatalogItem, mongodb.QuoteDetails, mongodb.OrderDetails, CatalogItemsRepository, mongodb.Dealer, RepositoryFactory, QuoteController, QuoteItemInfo, CatalogController, Order, OrderingInitializer, Utility, mongodb.MongoDealersRepository, OrderingConfiguration, mongodb.MongoQuoteRepository, QuoteRepository, DealersRepository, CatalogItem, Quote, mongodb.MongoCatalogItemsRepository, OrderStatus
+SS(ShipmentController.ss) = ShipmentRepository, mongodb.ShipmentDetails, ShipmentEventInfo, mongodb.MongoShipmentRepository, ShipmentRecord, DeliveryAddress, Delivery, ShipmentController
+SS(OrderingServiceProperties.ss) = OrderingServiceProperties, MongoDBProperties
+SS(BadRequestException.ss) = BadRequestException, ConflictingRequestException, SimpleCORSFilter

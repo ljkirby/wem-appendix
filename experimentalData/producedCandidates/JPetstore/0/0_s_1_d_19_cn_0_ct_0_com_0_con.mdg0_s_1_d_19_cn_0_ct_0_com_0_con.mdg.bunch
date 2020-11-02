@@ -1,0 +1,4 @@
+SS(domain.Item.ss) = domain.Product, domain.CartItem, mapper.IItemMapper, domain.LineItem, service.CatalogService, web.actions.CatalogActionBean, domain.Item, web.actions.CartActionBean, mapper.IProductMapper, domain.Cart, mapper.ILineItemMapper
+SS(web.actions.AccountActionBean.ss) = web.actions.AccountActionBean, domain.Account, service.AccountService, mapper.IAccountMapper
+SS(domain.Category.ss) = mapper.ISequenceMapper, domain.Sequence, mapper.ICategoryMapper, domain.Category
+SS(service.OrderService.ss) = mapper.IOrderMapper, service.OrderService, web.actions.OrderActionBean, domain.Order

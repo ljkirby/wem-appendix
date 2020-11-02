@@ -1,0 +1,15 @@
+contain Catalog.ss catalog.CatalogItem
+contain Catalog.ss catalog.CatalogItemType
+contain Frontend.ss cart.Cart
+contain Frontend.ss cart.CartItem
+contain Frontend.ss catalog.CatalogItem
+contain Frontend.ss catalog.CatalogItemBean
+contain Frontend.ss checkout.Order
+contain Frontend.ss checkout.OrderBean
+contain Frontend.ss checkout.OrderItem
+contain Frontend.ss checkout.Shipping
+contain Frontend.ss uzer.UzerBean
+contain Frontend.ss uzer.UzerItem
+contain Order.ss checkout.Order
+contain Order.ss checkout.OrderItem
+contain User.ss uzer.Uzer

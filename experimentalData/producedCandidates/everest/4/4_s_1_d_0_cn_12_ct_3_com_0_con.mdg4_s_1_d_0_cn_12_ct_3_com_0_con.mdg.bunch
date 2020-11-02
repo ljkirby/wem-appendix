@@ -1,0 +1,4 @@
+SS(checkout.OrderBean.ss) = checkout.OrderItem, checkout.OrderBean, checkout.Order
+SS(cart.CartItem.ss) = catalog.CatalogItemBean, catalog.CatalogItemType, catalog.CatalogItem, cart.CartItem
+SS(uzer.UzerItem.ss) = checkout.Shipping, uzer.Uzer, uzer.UzerItem, uzer.UzerBean
+SS(cart.Cart.ss) = cart.Cart

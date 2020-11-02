@@ -1,0 +1,31 @@
+{
+  "main": "app.js",
+  "start": "node server.js",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "cors": "^2.8.5",
+    "expo-server-sdk": "^3.3.0",
+    "express": "^4.17.1",
+    "node-pre-gyp": "^0.12.0"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "jest --coverage --verbose --colors"
+  },
+  "name": "wem-server",
+  "version": "1.0.0",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/<anon-author>/wem-server.git"
+  },
+  "author": "<anon-author>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/<anon-author>/wem-server/issues"
+  },
+  "homepage": "https://github.com/<anon-author>/wem-server#readme"
+}

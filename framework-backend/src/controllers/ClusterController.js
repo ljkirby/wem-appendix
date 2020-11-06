@@ -8,6 +8,8 @@ const bodyParser = require('body-parser');
 router.use(bodyParser.urlencoded({extended: true}));
 router.use(bodyParser.json());
 
+const CURRENT_WORKING_DIRECTORY = "/Users/<anon-author>/repos/wem/wem-server/src/controllers";
+
 router.get('/cluster/:projectname/:static/:dynamic/:classnames/:classterms/:commit/:contributor', async (req, res) => {
     try {
 
@@ -29,7 +31,7 @@ router.get('/cluster/:projectname/:static/:dynamic/:classnames/:classterms/:comm
         let scriptPath = '../../weightGraphScripts/generateWeightedGraphWithArguments.sh';
 
         let shellOutput = await execFileSync(`${scriptPath}`, scriptArguments.split(" "), {
-          cwd: "/Users/<anon-author>/repos/wem/wem-server/src/controllers", 
+          cwd: CURRENT_WORKING_DIRECTORY, 
           encoding: "utf-8"
         });
 

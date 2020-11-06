@@ -1,5 +1,5 @@
 
-# Insert the path to the directory of this script below
+# Insert the path to the directory of framework backend below
 SCRIPTS_DIR=
 
 PROJECT_NAME=$1

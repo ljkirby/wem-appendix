@@ -3,9 +3,9 @@
 
 ## Index
 1. [About](#about)
-2. [Benchmark Applications](#benchmark-applications)
-3. [Experimental Data](experimentalData) 
-4. [Implementation](#implementation)
+2. [Experimental Data](experimentalData) 
+3. [Implementation](#implementation)
+4. [Benchmark Applications](#benchmark-applications)
 
 ## About
 
@@ -17,22 +17,6 @@ This repository houses the data and results we collected whilst running our expe
 
 A frontend for this code is deployed to [http://wem-web.herokuapp.com/](http://wem-web.herokuapp.com/) -- you can view PartsUnlimitedMRP (with the exclusion of the Dealer classes) and try out different relationship type prioritizations through this UI!  
 
-## Benchmark Applications 
-
-*Note that in our paper, we refer to the microservice-based versions of the benchmarks as the "expected" versions.*
-
-#### PartsUnlimitedMRP
-
-- [Monolithic Version](https://github.com/microsoft/PartsUnlimitedMRP) 
-- [Microservice-based Version](https://github.com/microsoft/PartsUnlimitedMRPmicro)
-
-#### JPetstore
-- [Monolithic Version](https://github.com/mybatis/jpetstore-6) 
-- [Microservice-based Version](https://github.com/research-iobserve/jpetstore-6/tree/distributed-jpetstore)
-
-#### Everest
-- [Monolithic Version](https://github.com/arun-gupta/microservices/tree/master/monolith/everest) 
-- [Microservice-based Version](https://github.com/arun-gupta/microservices/tree/master/microservice)
 
 ## Experimental Data
 All data collected and used in the experiments for this paper can be found [here](experimentalData/).
@@ -62,3 +46,20 @@ For demonstration purposes, we've implemented a graphical user interface that yo
   - e.g. if I would like to decompose application "PartsUnlimitedMRP" w/ 80% prioritization on static, 20% prioritization on dynamic, then I would hit the following api: 
     - `localhost:8080/PartsUnlimitedMRP/80/20/0/0/0/0`
     - result should be returned in the form of a file in Rigi Standard Format
+
+## Benchmark Applications 
+
+*Note that in our paper, we refer to the microservice-based versions of the benchmarks as the "expected" versions.*
+
+#### PartsUnlimitedMRP
+
+- [Monolithic Version](https://github.com/microsoft/PartsUnlimitedMRP) 
+- [Microservice-based Version](https://github.com/microsoft/PartsUnlimitedMRPmicro)
+
+#### JPetstore
+- [Monolithic Version](https://github.com/mybatis/jpetstore-6) 
+- [Microservice-based Version](https://github.com/research-iobserve/jpetstore-6/tree/distributed-jpetstore)
+
+#### Everest
+- [Monolithic Version](https://github.com/arun-gupta/microservices/tree/master/monolith/everest) 
+- [Microservice-based Version](https://github.com/arun-gupta/microservices/tree/master/microservice)

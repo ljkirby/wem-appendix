@@ -4,12 +4,12 @@ SCRIPTS_DIR=
 
 PROJECT_NAME=$1
 
-STATIC=${SCRIPTS_DIR}/dependencyGraphs/${PROJECT_NAME}/static.csv
-DYNAMIC=${SCRIPTS_DIR}/dependencyGraphs/${PROJECT_NAME}/dynamic.csv
-CLASSTERMS=${SCRIPTS_DIR}/dependencyGraphs/${PROJECT_NAME}/classterms.csv
-CLASSNAMES=${SCRIPTS_DIR}/dependencyGraphs/${PROJECT_NAME}/classnames.csv
-CONTRIBUTOR=${SCRIPTS_DIR}/dependencyGraphs/${PROJECT_NAME}/contributor.csv
-COMMIT=${SCRIPTS_DIR}/dependencyGraphs/${PROJECT_NAME}/commit.csv
+STATIC=${SCRIPTS_DIR}/dependencyGraphs/static/${PROJECT_NAME}StaticGraph.csv
+DYNAMIC=${SCRIPTS_DIR}/dependencyGraphs/dynamic/fosci/${PROJECT_NAME}DynamicFosciGraph.csv
+CLASSTERMS=${SCRIPTS_DIR}/dependencyGraphs/semantic/classTerms/${PROJECT_NAME}ClassTermsGraph.csv
+CLASSNAMES=${SCRIPTS_DIR}/dependencyGraphs/semantic/className/${PROJECT_NAME}ClassNameGraph.csv
+CONTRIBUTOR=${SCRIPTS_DIR}/dependencyGraphs/evolutionary/contributors/${PROJECT_NAME}ContributorGraph.csv
+COMMIT=${SCRIPTS_DIR}/dependencyGraphs/evolutionary/commits/${PROJECT_NAME}CommitGraph.csv
 
 IS_DIRECTED=1
 MIN_EDGE_WEIGHT=1

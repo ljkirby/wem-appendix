@@ -1,0 +1,10 @@
+checkout.OrderBean,cart.CartItem,6
+checkout.OrderBean,cart.Cart,2
+checkout.OrderBean,checkout.Order,3
+checkout.OrderBean,checkout.OrderItem,3
+uzer.UzerBean,uzer.Uzer,13
+uzer.UzerBean,uzer.UzerItem,10
+catalog.CatalogItemBean,catalog.CatalogItem,13
+cart.Cart,cart.CartItem,4
+checkout.Shipping,uzer.UzerItem,9
+checkout.Shipping,uzer.Uzer,7

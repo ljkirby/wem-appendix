@@ -1,4 +1,0 @@
-SS(checkout.OrderBean.ss) = checkout.OrderItem, uzer.Uzer, checkout.OrderBean, checkout.Order
-SS(cart.Cart.ss) = cart.CartItem, cart.Cart
-SS(catalog.CatalogItemBean.ss) = catalog.CatalogItemBean, catalog.CatalogItemType, catalog.CatalogItem
-SS(uzer.UzerItem.ss) = checkout.Shipping, uzer.UzerItem, uzer.UzerBean

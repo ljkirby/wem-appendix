@@ -3,32 +3,30 @@
 
 ## Index
 1. [About](#about)
-2. [Experimental Data](experimentalData) 
-3. [Implementation](#implementation)
-4. [Benchmark Applications](#benchmark-applications)
+2. [Implementation](#implementation)
+2. [Case Study Application](#implementation)
 
 ## About
 
-The microservice-based architecture – a SOA-inspired principle of dividing systems into components that communicate with each other using language-agnostic APIs – has gained increased popularity in industry. Yet, migrating a monolithic application to microservices is a challenging task. A number of automated microservice extraction techniques have been proposed to help developers with the migration complexity. These techniques, at large, construct a graph-based representation of an application and cluster its elements into service candidates. The techniques vary by the types of relationships between application elements that they consider – structural, semantic term similarity, and evolutionary – with each technique utilizing a fixed subset of these relationship types.
+The microservice-based architecture -- a SOA-inspired principle of dividing systems into components that communicate with each other using language-agnostic APIs -- has gained increased popularity in industry. Yet, migrating a monolithic application to microservices is a challenging task. 
+A number of automated microservice extraction techniques have been proposed to help developers with the migration complexity. These techniques, at large, construct a graph-based representation of an application and cluster its elements into service candidates. The techniques vary by their decomposition goals and, subsequently,
+types of relationships between application elements that they consider~-- structural, semantic term similarity, and evolutionary~-- with each technique utilizing a fixed subset and weighting of these relationship types.
 
-Our experience interacting with industry practitioners shows that the relationships prioritized throughout the decomposition process are usually application-specific. That is, there is no one-size-fits-all decomposition solution that is always superior to others. Driven by this insight, we propose a framework that allows the user to prioritize relationship types for a particular input application. We instantiate the framework with multiple relationship types and use it to decompose three open-source applications that have both a monolithic and microservice-based version available to us. We analyze the decompositions produced by our framework and show that the decompositions closest to the manually produced versions prioritize different relationships, supporting our conclusion that there is no fixed set of relationships that works for all microservice-extraction goals.
+In this paper, we perform a multi-method exploratory study with \numPractitioners industrial practitioners to
+investigate (1) the applicability and usefulness of different relationships types during the 
+microservice extraction process and (2) expectations practitioners have for tools utilizing such relationships. 
+Our results show that practitioners often need a ``what-if'' analysis tool that simultaneously considers 
+multiple relationship types during the extraction process and 
+that there is no fixed way to weight these relationships. 
+Our study also identifies organization- and application-specific considerations that lead practitioners to prefer 
+certain relationship types over others, e.g., the age of the codebase and languages spoken in the organization. 
+It outlines possible strategies to help developers during the extraction process, 
+e.g., the ability to iteratively filter and customize relationships.    
 
 This repository houses the data and results we collected whilst running our experiments. It also includes the code we used for extracting microservice candidates, alongside instructions for configuring, running, and modifying the code.
 
-A frontend for this code is deployed to [http://wem-web.herokuapp.com/](http://wem-web.herokuapp.com/) -- you can view PartsUnlimitedMRP (with the exclusion of the Dealer classes) and try out different relationship type prioritizations through this UI!  
+A frontend for this code is deployed to [http://wem-web.herokuapp.com/](http://wem-web.herokuapp.com/) -- please make sure you use **http**, otherwise you will not get a response from the clustering backend. You can use the frontend to view PartsUnlimitedMRP (with the exclusion of the Dealer classes) and try out different relationship type prioritizations through this UI!  
 
-
-## Experimental Data
-All data collected and used in the experiments for this paper can be found [here](experimentalData/).
-
-`experimentalData/dependencyGraphs`
-- Contains static, dynamic, and evolutionary graphs that represent the monolithic versions of our [benchmark applications](#benchmark-applications).
-
-`experimentalData/expectedCandidates`
-- Contains architectural descriptions (in Rigi Standard Format) of the expected, manually-produced microservice-based versions of our [benchmark applications](#benchmark-applications).
-
-`experimentalData/producedCandidates`
-- Contains architectural descriptions (in Rigi Standard Format) of the microservice candidates generated by running the Bunch clustering algorithm on static, dynamic, and evolutionary dependencies extracted from our [benchmark applications](#benchmark-applications).
 
 ## Framework Implementation
 
@@ -47,19 +45,9 @@ For demonstration purposes, we've implemented a graphical user interface that yo
     - `localhost:8080/PartsUnlimitedMRP/80/20/0/0/0/0`
     - result should be returned in the form of a file in Rigi Standard Format
 
-## Benchmark Applications 
-
-*Note that in our paper, we refer to the microservice-based versions of the benchmarks as the "expected" versions.*
+## Case Study Application
 
 #### PartsUnlimitedMRP
 
 - [Monolithic Version](https://github.com/microsoft/PartsUnlimitedMRP) 
 - [Microservice-based Version](https://github.com/microsoft/PartsUnlimitedMRPmicro)
-
-#### JPetstore
-- [Monolithic Version](https://github.com/mybatis/jpetstore-6) 
-- [Microservice-based Version](https://github.com/research-iobserve/jpetstore-6/tree/distributed-jpetstore)
-
-#### Everest
-- [Monolithic Version](https://github.com/arun-gupta/microservices/tree/master/monolith/everest) 
-- [Microservice-based Version](https://github.com/arun-gupta/microservices/tree/master/microservice)

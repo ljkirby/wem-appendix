@@ -25,7 +25,7 @@ e.g., the ability to iteratively filter and customize relationships.
 
 This repository houses the data and results we collected whilst running our experiments. It also includes the code we used for extracting microservice candidates, alongside instructions for configuring, running, and modifying the code.
 
-A frontend for this code is deployed to [http://wem-web.herokuapp.com/](http://wem-web.herokuapp.com/) -- please make sure you use **http**, otherwise you will not get a response from the clustering backend. You can use the frontend to view PartsUnlimitedMRP (with the exclusion of the Dealer classes) and try out different relationship type prioritizations through this UI!  
+A frontend for this code is deployed to [https://wem-web.herokuapp.com/](https://wem-web.herokuapp.com/). You can use the frontend to view PartsUnlimitedMRP (with the exclusion of the Catalog classes) and try out different relationship type prioritizations through this UI!  
 
 
 ## Framework Implementation

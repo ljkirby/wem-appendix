@@ -1,4 +1,3 @@
-## Supplemental Material
 ## Weighing the Evidence: On Relationship Types in Microservice Extraction
 
 ## Index
@@ -6,13 +5,16 @@
 2. [Implementation](#implementation)
 2. [Case Study Application](#implementation)
 
+## Graphical User Interface
+[https://wem-web.herokuapp.com/](https://wem-web.herokuapp.com/)
+
 ## About
 
 The microservice-based architecture -- a SOA-inspired principle of dividing systems into components that communicate with each other using language-agnostic APIs -- has gained increased popularity in industry. Yet, migrating a monolithic application to microservices is a challenging task. 
 A number of automated microservice extraction techniques have been proposed to help developers with the migration complexity. These techniques, at large, construct a graph-based representation of an application and cluster its elements into service candidates. The techniques vary by their decomposition goals and, subsequently,
-types of relationships between application elements that they consider~-- structural, semantic term similarity, and evolutionary~-- with each technique utilizing a fixed subset and weighting of these relationship types.
+types of relationships between application elements that they consider -- structural, semantic term similarity, and evolutionary -- with each technique utilizing a fixed subset and weighting of these relationship types.
 
-In this paper, we perform a multi-method exploratory study with \numPractitioners industrial practitioners to
+In this paper, we perform a multi-method exploratory study with 11 industrial practitioners to
 investigate (1) the applicability and usefulness of different relationships types during the 
 microservice extraction process and (2) expectations practitioners have for tools utilizing such relationships. 
 Our results show that practitioners often need a ``what-if'' analysis tool that simultaneously considers 

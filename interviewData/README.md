@@ -6,7 +6,7 @@ Each interview study consisted of 3 main parts: explaining the goal of our study
 
 To familiarize participants with the goal of our research and with *structural, semantic, and evolutionary* relationship types, we showed participants a short (~10 minute) powerpoint presentation that defines the relationship types using small examples.
 
-The slides we used to familiarize participants with relationship types are included in this directory, under interview-study-presentation.pdf.
+The slides we used to familiarize participants with relationship types are included in this directory, under [slides](slides/).
 
 ### Part 3: Interview Questions
 

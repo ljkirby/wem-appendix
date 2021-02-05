@@ -2,8 +2,9 @@
 
 ## Index
 1. [About](#about)
-2. [Implementation](#implementation)
-2. [Case Study Application](#implementation)
+2. [Interview Protocol](#interview-protocol)
+3. [Implementation](#implementation)
+4. [Case Study Application](#case-study-application)
 
 ## Graphical User Interface
 [https://wem-web.herokuapp.com/](https://wem-web.herokuapp.com/)
@@ -28,6 +29,9 @@ e.g., the ability to iteratively filter and customize relationships.
 This repository houses the data and results we collected whilst running our experiments. It also includes the code we used for extracting microservice candidates, alongside instructions for configuring, running, and modifying the code.
 
 A frontend for this code is deployed to [https://wem-web.herokuapp.com/](https://wem-web.herokuapp.com/). You can use the frontend to view PartsUnlimitedMRP (with the exclusion of the Catalog classes) and try out different relationship type prioritizations through this UI!  
+
+## Interview Protocol
+Please refer to [this path](interviewData/) for more information on our interview protocol.
 
 
 ## Framework Implementation

@@ -1,6 +1,6 @@
 
 # Insert the path to the directory of framework backend below
-SCRIPTS_DIR=
+SCRIPTS_DIR=<insert-script-dir-here>
 
 PROJECT_NAME=$1
 

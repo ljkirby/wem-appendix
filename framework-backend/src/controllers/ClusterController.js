@@ -35,8 +35,6 @@ router.get('/cluster/:projectname/:static/:dynamic/:classnames/:classterms/:comm
           encoding: "utf-8"
         });
 
-        console.log(shellOutput);
-
         const resultsFileName =`${static}-static-${dynamic}-dynamic-${classnames}-classnames-${classterms}-classterms-${commit}-commit-${contributor}-contributor.mdg.rsf`
 
         const clusterResultsFile = `../weightGraphScripts/bunch/${req.params.projectname}/${resultsFileName}`;
@@ -68,7 +66,7 @@ router.get('/cluster/:projectname', async (req, res) => {
         let scriptPath = '../../weightGraphScripts/generateWeightedGraphWithArguments.sh';
 
         let fileName = await execFileSync(`${scriptPath}`, scriptArguments.split(" "), {
-          cwd: "/Users/<anon-author>/repos/wem/wem-server/src/controllers"
+          cwd: CURRENT_WORKING_DIRECTORY
         });
         const resultsFileName =`${static}-static-${dynamic}-dynamic-${classnames}-classnames-${classterms}-classterms-${commit}-commit-${contributor}-contributor.mdg.rsf`
 

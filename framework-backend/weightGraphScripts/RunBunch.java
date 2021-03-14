@@ -28,8 +28,8 @@ public class RunBunch {
 		bp.setProperty(BunchProperties.MDG_OUTPUT_MODE, BunchProperties.OUTPUT_DETAILED);
     //select 200 intial partitions and perform bunch on each of them, selecting the result w/ the highest MQ value
 		bp.setProperty(BunchProperties.ALG_HC_POPULATION_SZ, "200");
-    //examine all possible neighbor partitions
-		bp.setProperty(BunchProperties.ALG_HC_HC_PCT, "100");
+    //examine half of all possible neighbor partitions
+		bp.setProperty(BunchProperties.ALG_HC_HC_PCT, "50");
     
 		api.setProperties(bp);
 		api.run();

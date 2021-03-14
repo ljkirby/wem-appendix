@@ -1,0 +1,11 @@
+
+- semantic: 
+    - class name graph -> see [classNameScripts](./classNameScripts)
+    - tf-idf graph -> See [classTermScripts](./classTermScripts/README.md) for instructions
+- evolutionary: 
+  - contributor & commits graph -> both generated w/ [evolutionaryScripts](./evolutionaryScripts)
+  - you will need to run `python3 gitcontributions.py` then `python3 SortByFile.py`
+- static: 
+    - call graph -> generated w/ SciTools Understand (static analysis tool downloaded from internet)
+- dynamic:  
+    - FoSCI's call graph (representative execution traces) -> generated from scripts in the repo created by the authors of fosci: [link to repo](https://github.com/jinwuxia/RS17_project_program/tree/master/improvesplit) 

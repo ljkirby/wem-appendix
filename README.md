@@ -1,4 +1,5 @@
 ## Weighing the Evidence: On Relationship Types in Microservice Extraction
+[![DOI](https://zenodo.org/badge/308556769.svg)](https://zenodo.org/badge/latestdoi/308556769)
 
 ## Index
 1. [About](#about)

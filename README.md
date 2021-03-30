@@ -30,7 +30,7 @@ Please refer to the `/interviewData` directory for more information on our inter
 
 ## Framework Implementation
 
-Source code for the implementation of the framework we used for the paper can be found [here](framework-backend/).
+Source code for the backend implementation of the framework we used for the paper can be found in the `/framework-backend` directory.
 For demonstration purposes, we've implemented a graphical user interface that you can use to view PartsUnlimitedMRP. Code for the frontend can be found in the `/framework-frontend` directory.
 
 **Using our approach:** 

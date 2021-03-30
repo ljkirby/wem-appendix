@@ -1,11 +1,4 @@
 ## Weighing the Evidence: On Relationship Types in Microservice Extraction
-[![DOI](https://zenodo.org/badge/308556769.svg)](https://zenodo.org/badge/latestdoi/308556769)
-
-## Index
-1. [About](#about)
-2. [Interview Protocol](#interview-protocol)
-3. [Implementation](#implementation)
-4. [Case Study Application](#case-study-application)
 
 ## Graphical User Interface
 [https://wem-web.herokuapp.com/](https://wem-web.herokuapp.com/)
@@ -32,17 +25,17 @@ This repository houses the data and results we collected whilst running our expe
 A frontend for this code is deployed to [https://wem-web.herokuapp.com/](https://wem-web.herokuapp.com/). You can use the frontend to view PartsUnlimitedMRP (with the exclusion of the Catalog classes) and try out different relationship type prioritizations through this UI!  
 
 ## Interview Protocol
-Please refer to [this path](interviewData/) for more information on our interview protocol.
+Please refer to the `/interviewData` directory for more information on our interview protocol.
 
 
 ## Framework Implementation
 
 Source code for the implementation of the framework we used for the paper can be found [here](framework-backend/).
-For demonstration purposes, we've implemented a graphical user interface that you can use to view PartsUnlimitedMRP. Code for the frontend can be found [here](framework-frontend/)
+For demonstration purposes, we've implemented a graphical user interface that you can use to view PartsUnlimitedMRP. Code for the frontend can be found in the `/framework-frontend` directory.
 
 **Using our approach:** 
 1. Extract a class graph that represents your monolithic application, and weight the edges based on the relationship type of your choosing (e.g. # static inter-class method calls, # dynamic inter-class method calls, evolutionary similarity, etc). Class graph must be written in Module Dependency Graph format and must be stored as a .CSV file.
-2. Feed the files generated in steps 1 to the clustering algorithm of your choosing. Additional configuration of the clustering algorithm may be required. This repository contains an implementation of the Bunch clustering algorithm that you may use to produce microservice candidates. Detailed instructions for running this algorithm are included [here](framework-backend).
+2. Feed the files generated in steps 1 to the clustering algorithm of your choosing. Additional configuration of the clustering algorithm may be required. This repository contains an implementation of the Bunch clustering algorithm that you may use to produce microservice candidates. Detailed instructions for running this algorithm are included in the `README.md` of the `/framework-backend` directory.
 
 ## Case Study Application
 

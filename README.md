@@ -1,7 +1,7 @@
 ## Weighing the Evidence: On Relationship Types in Microservice Extraction
 
 ## Graphical User Interface
-[https://wem-web.herokuapp.com/](https://wem-web.herokuapp.com/)
+[http://wem-web.ece.ubc.ca/](http://wem-web.ece.ubc.ca/)
 
 ## About
 
@@ -22,7 +22,7 @@ e.g., the ability to iteratively filter and customize relationships.
 
 This repository houses the data and results we collected whilst running our experiments. It also includes the code we used for extracting microservice candidates, alongside instructions for configuring, running, and modifying the code.
 
-A frontend for this code is deployed to [https://wem-web.herokuapp.com/](https://wem-web.herokuapp.com/). You can use the frontend to view PartsUnlimitedMRP (with the exclusion of the Catalog classes) and try out different relationship type prioritizations through this UI!  
+A frontend for this code is deployed to [http://wem-web.ece.ubc.ca/](http://wem-web.ece.ubc.ca/). You can use the frontend to view PartsUnlimitedMRP (with the exclusion of the Catalog classes) and try out different relationship type prioritizations through this UI!  
 
 ## Interview Protocol
 Please refer to the `/interviewData` directory for more information on our interview protocol.
